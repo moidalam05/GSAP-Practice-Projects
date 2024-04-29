@@ -52,6 +52,7 @@ body {
     right: -40%;
     backdrop-filter: blur(10px);
     padding: 150px 60px;
+    z-index: 10;
 }
 
 #full h4 {
@@ -86,4 +87,5 @@ body {
     text-shadow: 0 2px 1px #dae2d8,
         -1px 3px 1px #e8ece7,
         -2px 5px 1px #eff0ef;
+    z-index: 1;
 }
