@@ -43,13 +43,78 @@ function pageOneAnimation() {
 		},
 		'-=1'
 	);
-
-	tl.from('.section1bottom img', {
-		y: 50,
-		opacity: 0,
-		duration: 0.7,
-		stagger: 0.15,
-	});
 }
 
 pageOneAnimation();
+
+function pageTwoAnimation() {
+	let tl2 = gsap.timeline({
+		scrollTrigger: {
+			trigger: '.section2',
+			scroller: 'body',
+			start: 'top 50%',
+			end: 'top 0%',
+			scrub: 2,
+		},
+	});
+
+	tl2.from('.section1bottom img', {
+		y: 50,
+		opacity: 0,
+		duration: 1,
+		stagger: 0.15,
+	});
+
+	tl2.from('.services', {
+		x: -200,
+		opacity: 0,
+		duration: 1,
+		stagger: 0.15,
+	});
+
+	tl2.from(
+		'.elem.line1.left',
+		{
+			x: -300,
+			opacity: 0,
+			duration: 2,
+			// stagger: 0.15,
+		},
+		'anime'
+	);
+
+	tl2.from(
+		'.elem.line1.right',
+		{
+			x: 300,
+			opacity: 0,
+			duration: 2,
+			// stagger: 0.15,
+		},
+		'anime'
+	);
+
+	tl2.from(
+		'.elem.line2.left',
+		{
+			x: -300,
+			opacity: 0,
+			duration: 2,
+			// stagger: 0.15,
+		},
+		'anime2'
+	);
+
+	tl2.from(
+		'.elem.line2.right',
+		{
+			x: 300,
+			opacity: 0,
+			duration: 2,
+			// stagger: 0.15,
+		},
+		'anime2'
+	);
+}
+
+pageTwoAnimation();

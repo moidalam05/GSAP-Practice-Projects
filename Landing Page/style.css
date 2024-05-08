@@ -13,6 +13,10 @@ body {
     width: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 section {
     /* height: 100%; */
     width: 100%;
@@ -106,7 +110,7 @@ nav button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 80px;
+    padding: 0 80px;
 }
 
 .section1bottom img {
